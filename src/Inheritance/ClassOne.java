@@ -29,6 +29,8 @@ public class ClassOne extends ClassTwo {
 
         ClassTwo classTwo = new ClassTwo();
         classTwo.withOutStaticMethod();
+
+       ClassTwo.staticMethod();
     }
 
 }
