@@ -45,7 +45,7 @@ class A {
 
 public class MainClass {
     public static void main(String[] args) {
-      /*  X x = new Y();
+        X x = new Y();
 
         x.calculate(10, 20);
 
@@ -55,11 +55,13 @@ public class MainClass {
 
         Z z = (Z) y;
 
-        z.calculate(100, 200);*/
+        z.calculate(100, 200);
 
-        /*new A().A();*/
+        new A().A();
 
         method((short) 12);
+        method(null);
+        method(10.0);
     }
 
     {
@@ -86,7 +88,7 @@ abstract class AbstractClass {
     public abstract void test();
 
     void test1() {
-
+        System.out.println("Test 1");
     }
 }
 
