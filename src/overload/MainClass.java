@@ -59,8 +59,9 @@ public class MainClass {
 
         new A().A();
 
+        method(12);
         method((short) 12);
-        method(null);
+//        method(null);
         method(10.0);
     }
 
@@ -80,6 +81,9 @@ public class MainClass {
         System.out.println(5);
     }
 
+    static void method(Integer o) {
+        System.out.println(6);
+    }
 }
 
 

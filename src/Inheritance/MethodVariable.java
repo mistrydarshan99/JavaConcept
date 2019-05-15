@@ -14,6 +14,8 @@ public class MethodVariable {
         Bottle bottle1 = new Box();
         System.out.println(bottle1.i);
         bottle1.bottleMethod();
+
+//        Box boxSuper = new Bottle();
     }
 }
 

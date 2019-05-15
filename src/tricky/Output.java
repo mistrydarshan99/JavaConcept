@@ -4,7 +4,7 @@ public class Output {
 
     public static void main(String[] args) {
 
-//        foo(null);
+        foo(null);
 
         /*long longWithL = 1000*60*60*24*365L;
         long longWithoutL = 1000*60*60*24*365;
