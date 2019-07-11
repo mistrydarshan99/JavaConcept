@@ -11,17 +11,17 @@ public class InterfaceExample implements TypeOne, TypeTwo{
 
     }
 
-   /* @Override
+    @Override
     public boolean isChild() {
         return false;
-    }*/
+    }
 }
 
 interface TypeOne{
 
     void methodOne();
 
-//    boolean isChild();
+    boolean isChild();
 }
 
 

@@ -5,17 +5,17 @@ public class Tricky2 {
 
     public static void main(String[] args) {
 
-        G g = new B();
+   /*     G g = new B();
         g.methodOne();
         System.out.println(g.i);
 
         ABC abc = new XYZ();
         abc.methodABC(10);
-        abc.methodABC();
+        abc.methodABC();*/
 
-        N n = new N(26);
+//        N n = new N(26);
 
-        KA y = new KA();
+//        KA y = new KA();
 
 
         ABCD a = new ABCD();

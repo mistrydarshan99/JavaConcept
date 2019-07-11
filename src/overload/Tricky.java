@@ -10,31 +10,40 @@ public class Tricky {
         K test = new L();
         System.out.println(test.method(21.12));
         System.out.println(test.personName());
+
     }
 }
 
 class J {
+    int param = 10;
+
     int method(int i) {
         return i *= i;
     }
 }
 
 class K extends J {
+
+    int param = 20;
+
     double method(double d) {
         return d /= d;
     }
 
-    String personName(){
+    String personName() {
         return "Class K";
     }
 }
 
 class L extends K {
+
+    int param = 30;
+
     float method(float f) {
         return f += f;
     }
 
-    String personName(){
+    String personName() {
         return "Class L";
     }
 }

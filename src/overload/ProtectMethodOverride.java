@@ -19,4 +19,5 @@ class SubProtectedMehod extends ProtectMethodOverride{
     }
 
 
+
 }

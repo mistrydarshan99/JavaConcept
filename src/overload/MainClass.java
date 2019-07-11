@@ -53,16 +53,17 @@ public class MainClass {
 
         y.calculate(50, 100);
 
-        Z z = (Z) y;
+//        Z z = (Z) y; //It gives ClassCastException
 
-        z.calculate(100, 200);
+//        z.calculate(100, 200);
 
-        new A().A();
+//        new A().A();
 
         method(12);
         method((short) 12);
 //        method(null);
         method(10.0);
+        method(11.15);
     }
 
     {
@@ -71,6 +72,10 @@ public class MainClass {
 
     static void method(Double d) {
         System.out.println(2);
+    }
+
+    static void method(Float d) {
+        System.out.println(99);
     }
 
     static void method(Number n) {
