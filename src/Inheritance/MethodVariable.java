@@ -17,6 +17,11 @@ public class MethodVariable {
         System.out.println(bottle1.i);
         bottle1.bottleMethod();
 
+        /*
+
+          Super class object cannot assign into subclass variable.
+
+         */
 //        Box boxSuper = new Bottle();
     }
 }
@@ -24,11 +29,11 @@ public class MethodVariable {
 class Bottle {
     int i = 10;
 
-    void bottleMethod(){
+    void bottleMethod() {
         System.out.println("Bottle");
     }
 
-    static void bottleMethodStatic(){
+    static void bottleMethodStatic() {
         System.out.println("Bottle static method");
     }
 }
@@ -41,7 +46,7 @@ class Box extends Bottle {
         System.out.println("Box Method");
     }
 
-    static void boxMethodStatic(){
+    static void boxMethodStatic() {
         System.out.println("Box static method");
     }
 }

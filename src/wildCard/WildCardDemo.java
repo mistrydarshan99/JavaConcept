@@ -62,6 +62,7 @@ public class WildCardDemo {
     //    treat it like that for reading purposes.
     public static void doSomethingWith(List<? extends Number> numbers) {
 //        numbers.add(Integer.valueOf(0)); // Won't compile
+//        numbers.add(10); //Won't compile
 
         for (Number number : numbers) {
             // Do something with number
@@ -69,15 +70,20 @@ public class WildCardDemo {
         // OR
         Number number = numbers.get(0);
         // OR
-        Number number1 = numbers.remove(0);
+//        Number number1 = numbers.remove(0);
     }
 
     public static void doSomethingWithOne(List<? super Integer> integers) {
-        integers.add(Integer.valueOf(0));
+//        integers.add(Integer.valueOf(0));
+//        integers.add(15);
 
         //Won't compile
 //        for (Number number : integers) {
 //            // Do something with number
 //        }
+
+        for (Object integer : integers) {
+            System.out.println(((Integer)integer));
+        }
     }
 }

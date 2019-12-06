@@ -15,7 +15,7 @@ public class Output {
         outPutNewOne.setSalary(100);
         System.out.println(outPutNewOne.getSalary()); // 100
         OutPutNewOne outPutNewOne1 = newMethod(outPutNewOne);
-        System.out.println(outPutNewOne.getSalary()); // 300
+        System.out.println(outPutNewOne.getSalary()); // 200
         System.out.println(outPutNewOne1.getSalary()); // 300
     }
 
@@ -35,7 +35,7 @@ public class Output {
     public static void foo(String s) {
         System.out.println("String impl");
     }
-    /*public static void foo(OutPutNewOne outPutNewOne) {
+   /* public static void foo(OutPutNewOne outPutNewOne) {
         System.out.println("String impl");
     }*/
 }

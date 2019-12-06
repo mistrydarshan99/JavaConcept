@@ -3,6 +3,13 @@ package wildCard;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+* Use extend wildcard when you want to get values out of a structure and super wildcard when you put values in a structure.
+* Don’t use wildcard when you get and put values in a structure.
+* Note: You can specify an upper bound for a wildcard, or you can specify a lower bound, but you cannot specify both.
+* */
+
+
 public class WildCardDemoTwo {
 
     public static void main(String[] args) {
@@ -16,22 +23,45 @@ public class WildCardDemoTwo {
         List<Fruit> fruitList = new ArrayList<>();
 //        addFruits(fruitList); //Won't compile
 
-//        suprtFruit(asianAppleList); //Wont't compile
-        suprtFruit(appleList);
-        suprtFruit(fruitList);
+//        superFruitList(asianAppleList); //Wont't compile
+        superFruitList(appleList);
+        superFruitList(fruitList);
 
         List<? super Apple> baseketList = new ArrayList<>();
         baseketList.add(new Apple());
         baseketList.add(new AsianApple());
 //        baseketList.add(new Fruit()); //Won't compile
+
+        relationShip();
     }
 
+    private static void relationShip() {
+        List<Apple> listApple = new ArrayList<>();
+        List<Fruit> listFruitFix = new ArrayList<>();
+        List<AsianApple> listAsianApple = new ArrayList<>();
+//        List<Fruit> listFruit = listApple; // won't compile
+
+        List<? extends Fruit> listFruit = listApple;
+        List<? super Apple> listLowerApple = listApple;
+//        List<? super Apple> listLowerApple = listFruitFix; //won't compile
+//        List<? super Apple> listAsianApple = listFruitFix; //won't compile
+    }
+
+    /*Upper bound*/
+    /*Maximum limit of accept object upto Apple not above that.*/
     private static void addFruits(List<? extends Apple> listFruits) {
         System.out.println(listFruits);
+//        listFruits.add(new Fruit());
+//        listFruits.add(new Apple());
+//        listFruits.add(new AsianApple());
     }
 
-    private static void suprtFruit(List<? super Apple> listFruits) {
+    /*Lower bound wildcard*/
+    /*Minimum limit of accept object is Apple or above that.*/
+    private static void superFruitList(List<? super Apple> listFruits) {
         System.out.println(listFruits);
+        listFruits.add(new Apple());
+        listFruits.add(new AsianApple());
     }
 }
 

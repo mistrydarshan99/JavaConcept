@@ -32,3 +32,12 @@ class UncheckSuper extends UncheckedException {
         super.checkDemo();
     }
 }
+
+/*
+class CheckException extends UncheckedException {
+
+    @Override
+    void checkDemo() throws RuntimeException, SQLDataException {
+        super.checkDemo();
+    }
+}*/

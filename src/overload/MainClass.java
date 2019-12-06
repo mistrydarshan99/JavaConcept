@@ -57,10 +57,11 @@ public class MainClass {
 
 //        z.calculate(100, 200);
 
-//        new A().A();
+        new A().A();
 
         method(12);
         method((short) 12);
+        method((float) 12);
 //        method(null);
         method(10.0);
         method(11.15);
@@ -88,6 +89,10 @@ public class MainClass {
 
     static void method(Integer o) {
         System.out.println(6);
+    }
+
+    static void method(int number){
+        System.out.println(56);
     }
 }
 

@@ -16,7 +16,9 @@ public class Overloading {
 //  Method overloading is the best example of static binding
 //
 //  Is it possible to have two methods in a class with same method signature but different return types?
-//  No, compiler will give duplicate method error. Compiler checks only method signature for duplication not the return types. If two methods have same method signature, straight away it gives compile time error.
+//  No, compiler will give duplicate method error.
+//  Compiler checks only method signature for duplication not the return types.
+//  If two methods have same method signature, straight away it gives compile time error.
 //
 //  Java doesn't support operator overloading
 

@@ -7,8 +7,8 @@ public class YieldExample
       Thread producer = new Producer();
       Thread consumer = new Consumer();
        
-      producer.setPriority(Thread.MIN_PRIORITY); //Min Priority
-      consumer.setPriority(Thread.MAX_PRIORITY); //Max Priority
+      producer.setPriority(Thread.MAX_PRIORITY); //Min Priority
+      consumer.setPriority(Thread.MIN_PRIORITY); //Max Priority
        
       producer.start();
       consumer.start();
