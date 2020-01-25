@@ -30,7 +30,7 @@ class Bottle {
     int i = 10;
 
     void bottleMethod() {
-        System.out.println("Bottle");
+        System.out.println("Bottle Method");
     }
 
     static void bottleMethodStatic() {

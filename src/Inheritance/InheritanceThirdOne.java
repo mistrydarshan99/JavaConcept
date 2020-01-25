@@ -13,7 +13,8 @@ public class InheritanceThirdOne {
 
         System.out.println(b.a.i);
 
-        b.a.i = 2121;
+        b.a.i = 20;
+        b.i = 15;
 
         System.out.println("--------");
 
@@ -26,7 +27,7 @@ public class InheritanceThirdOne {
 }
 
 class A {
-    int i = 1212;
+    int i = 10;
 }
 
 class B extends A {

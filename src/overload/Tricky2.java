@@ -5,17 +5,17 @@ public class Tricky2 {
 
     public static void main(String[] args) {
 
-   /*     G g = new B();
+        G g = new B();
         g.methodOne();
         System.out.println(g.i);
 
         ABC abc = new XYZ();
         abc.methodABC(10);
-        abc.methodABC();*/
+        abc.methodABC();
 
-//        N n = new N(26);
+        N n = new N(26);
 
-//        KA y = new KA();
+        KA y = new KA();
 
 
         ABCD a = new ABCD();
@@ -101,7 +101,7 @@ class N extends M {
 
 
 class JK {
-    int m = 1111;
+    int m = 10;
 
     {
         m = m++;
@@ -132,7 +132,7 @@ class BCD extends ABCD {
 }
 
 class ClassOneTwo {
-    static int i, j = 191919;
+    static int i, j = 10;
 
     {
         --i;
@@ -229,15 +229,17 @@ class Y2 extends X2
     {
         Y2.methodOfY();
         ClassTwo2 classTwo2 = new ClassTwo2();
+        System.out.println(classTwo2.i);
+        System.out.println(classTwo2.j);
     }
 }
 
 
 class ClassOne1
 {
-    static int i = 111;
+     int i = 10;
 
-    int j = 222;
+    int j = 20;
 
     {
         i = i++ - ++j;

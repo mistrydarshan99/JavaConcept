@@ -59,41 +59,13 @@ public class MainClass {
 
         new A().A();
 
-        method(12);
-        method((short) 12);
-        method((float) 12);
-//        method(null);
-        method(10.0);
-        method(11.15);
     }
 
     {
         System.out.println(1);
     }
 
-    static void method(Double d) {
-        System.out.println(2);
-    }
 
-    static void method(Float d) {
-        System.out.println(99);
-    }
-
-    static void method(Number n) {
-        System.out.println(4);
-    }
-
-    static void method(Object o) {
-        System.out.println(5);
-    }
-
-    static void method(Integer o) {
-        System.out.println(6);
-    }
-
-    static void method(int number){
-        System.out.println(56);
-    }
 }
 
 
@@ -127,7 +99,7 @@ abstract class Calculate {
 
     int[][][] a = new int[5][5][5];
 
-    String[] oneDArray = new String[] {"ONE", "TWO", "THREE", "FOUR", "FIVE"};
+    String[] oneDArray = new String[]{"ONE", "TWO", "THREE", "FOUR", "FIVE"};
 
 
     String[][] twoDArray = new String[][]{
@@ -162,7 +134,7 @@ class MainClassAbstract {
             int add(int a, int b) {
                 return a + b;
             }
-        }.add(11010, 022011);
+        }.add(10, 20);
         System.out.println(result);
     }
 }

@@ -2,6 +2,9 @@ package queue;
 
 import java.util.*;
 
+/**
+ * FIFO
+ */
 public class QueueExample {
 
     public static void main(String[] args) {
@@ -47,6 +50,8 @@ public class QueueExample {
         namePriorityQueue.add("Chris");
         namePriorityQueue.add("Angelina");
         namePriorityQueue.add("Joe");
+
+       namePriorityQueue.forEach(s -> System.out.println(s));
 
         // Remove items from the Priority Queue (DEQUEUE)
         while (!namePriorityQueue.isEmpty()) {

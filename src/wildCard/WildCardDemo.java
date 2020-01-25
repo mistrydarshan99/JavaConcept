@@ -34,6 +34,7 @@ public class WildCardDemo {
         doSomethingWithOne(list1);
 //        doSomethingWithOne(list2); //Won't compile
         doSomethingWithOne(list3);
+//        doSomethingWithOne(Arrays.asList(11.1f)); //It will give Runtime Exception
     }
 
     //    Upper Bounded Wildcards

@@ -44,7 +44,7 @@ public class WildCardDemoTwo {
         List<? extends Fruit> listFruit = listApple;
         List<? super Apple> listLowerApple = listApple;
 //        List<? super Apple> listLowerApple = listFruitFix; //won't compile
-//        List<? super Apple> listAsianApple = listFruitFix; //won't compile
+//        List<? super Apple> listAsianApple = listAsianApple; //won't compile
     }
 
     /*Upper bound*/

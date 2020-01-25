@@ -9,7 +9,7 @@ public class TricyInheritance {
 
 class X
 {
-    int m = 1111;
+    int m = 10;
 
     {
         m = m++;

@@ -10,6 +10,7 @@ public class Main {
         String str1 = "HEllo";
         String str2 = new String("HEllo");
         String str3 = new String("HEllo");
+//        String str3 = "HEllo";
 
 
 
