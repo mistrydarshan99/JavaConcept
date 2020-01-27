@@ -2,6 +2,23 @@ package accessModifier;
 
 public class A {
     protected int i;
+    int defaultValue;
+
+    private void privateMethod(){
+
+    }
+
+    protected void protectedMethod(){
+
+    }
+
+    public void publicMethod(){
+
+    }
+
+    void defaultMethod(){
+
+    }
 }
 
 class B extends A {

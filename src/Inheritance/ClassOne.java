@@ -27,16 +27,21 @@ public class ClassOne extends ClassTwo {
         /*ClassOne classOne = new ClassOne();
         System.out.println(i);
         System.out.println(j);
-        classOne.withOutStaticMethod();*/
+        classOne.withOutStaticMethod();
 
-        ClassTwo classOne1 = new ClassOne();
+        ClassOne classAgain = new ClassOne();
+        System.out.println(i);
+        System.out.println(j);
+        classAgain.withOutStaticMethod();*/
+
+        /*ClassTwo classOne1 = new ClassOne();
         classOne1.withOutStaticMethod();
         System.out.println(i);
         System.out.println(j);
 
         ClassTwo classTwo = new ClassTwo();
         classTwo.withOutStaticMethod();
-        ClassTwo.staticMethod();
+        ClassTwo.staticMethod();*/
 
         System.out.println("-----------------New Logic-------------------");
 //        ClassOne subObj = (ClassOne) new ClassTwo(); //Super class cannot be assign to subclass
@@ -53,7 +58,7 @@ public class ClassOne extends ClassTwo {
 
 class ClassTwo {
 
-    static int i, j = 191919;
+    static int i, j = 2;
 
     {
         --i;

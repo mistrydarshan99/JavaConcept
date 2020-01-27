@@ -9,4 +9,16 @@ public class E extends A {
 //        System.out.println(a.i); i is not accessible
         System.out.println(i);
     }
+
+    @Override
+    protected void protectedMethod() {
+        super.protectedMethod();
+    }
+
+    @Override
+    public void publicMethod() {
+        super.publicMethod();
+    }
 }
+
+

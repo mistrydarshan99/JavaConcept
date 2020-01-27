@@ -25,8 +25,8 @@ public class Salary {
         System.out.println(address.getStreetName());
         Address changeAddress = address;
         System.out.println(changeAddress.getStreetName());
-//        changeAddress.setStreetName("Bhumker chowk");
-        address.setStreetName("Gurukul");
+        changeAddress.setStreetName("Bhumker chowk");
+//        address.setStreetName("Gurukul");
         System.out.println(changeAddress.getStreetName());
         System.out.println(address.getStreetName());
 
@@ -45,7 +45,7 @@ public class Salary {
         System.out.println(address.getStreetName());
 //        Address addressLocalObj = address;
         Address addressLocalObj = new Address();
-        addressLocalObj = address;
+//        addressLocalObj = address;
 //        address = addressLocalObj;
         addressLocalObj.setStreetName("Kumudnanagar");
         address.setStreetName("Noida");

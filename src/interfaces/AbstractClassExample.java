@@ -30,6 +30,25 @@ abstract class Guest {
     abstract void present();
 }
 
+abstract class MultipleExtend extends Guest {
+
+    abstract void test();
+
+}
+
+class Laptop extends MultipleExtend {
+
+    @Override
+    void present() {
+
+    }
+
+    @Override
+    void test() {
+
+    }
+}
+
 class Person extends Gift {
 
     @Override

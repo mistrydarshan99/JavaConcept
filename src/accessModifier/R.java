@@ -13,3 +13,26 @@ public class R {
         printTex();
     }
 }
+
+class AccessDefault extends A {
+
+    private void test() {
+        System.out.println(i);
+        System.out.println(defaultValue);
+    }
+
+    @Override
+    protected void protectedMethod() {
+        super.protectedMethod();
+    }
+
+    @Override
+    public void publicMethod() {
+        super.publicMethod();
+    }
+
+    @Override
+    void defaultMethod() {
+        super.defaultMethod();
+    }
+}

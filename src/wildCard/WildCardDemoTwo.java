@@ -62,6 +62,7 @@ public class WildCardDemoTwo {
         System.out.println(listFruits);
         listFruits.add(new Apple());
         listFruits.add(new AsianApple());
+//        listFruits.add(new Fruit()); //
     }
 }
 
@@ -71,6 +72,10 @@ class Fruit {
     public String toString() {
         return "I am a Fruit !!";
     }
+
+    void fruitColor(){
+
+    }
 }
 
 class Apple extends Fruit {
@@ -78,11 +83,21 @@ class Apple extends Fruit {
     public String toString() {
         return "I am an Apple !!";
     }
+
+    @Override
+    void fruitColor() {
+        super.fruitColor();
+    }
 }
 
 class AsianApple extends Apple {
     @Override
     public String toString() {
         return "I am an AsianApple !!";
+    }
+
+    @Override
+    void fruitColor() {
+        super.fruitColor();
     }
 }

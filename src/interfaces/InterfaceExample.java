@@ -1,6 +1,6 @@
 package interfaces;
 
-public class InterfaceExample implements TypeOne, TypeTwo{
+public class InterfaceExample implements TypeOne, TypeTwo {
 
     public static void main(String[] args) {
 
@@ -17,7 +17,7 @@ public class InterfaceExample implements TypeOne, TypeTwo{
     }
 }
 
-interface TypeOne{
+interface TypeOne {
 
     void methodOne();
 
@@ -25,9 +25,35 @@ interface TypeOne{
 }
 
 
-interface TypeTwo{
+interface TypeTwo {
 
     void methodOne();
 
 //    int isChild();
+}
+
+interface TypeThree extends TypeOne {
+
+    void methodOne();
+
+    boolean isMouse();
+}
+
+class Router implements TypeThree {
+
+    @Override
+    public void methodOne() {
+
+    }
+
+    @Override
+    public boolean isChild() {
+        return false;
+    }
+
+
+    @Override
+    public boolean isMouse() {
+        return false;
+    }
 }
